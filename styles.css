@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4c75af;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header .menu {
+  display: flex;
+  gap: 10px;
+}
+
+.header .menu button {
+  background-color: #ffffff;
+  color: #4c75af;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .menu button:hover {
+  background-color: #ffffff;
+  color: #592cb3;
+}
+
+.skill-card {
+  background-color: #f1f1f8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #060608;
+}
+
+.progress-bar-container {
+  height: 10px;
+  background-color: #000504;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #83cf4d;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.name {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.backimg {
+  width: 200px;
+  height: 500px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.content {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  background: rgb(248, 248, 249);
+  border-radius: 8px;
+  justify-content: center;
+  
+  box-shadow: 0 2px 4px rgba(7, 86, 197, 0.1);
+ 
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
