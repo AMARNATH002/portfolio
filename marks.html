@@ -5,77 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marks & Certificates</title>
   <link rel="stylesheet" href="styles.css">
+  
+  <script>
+    function showPopup(imageSrc) {
+      document.getElementById('popup-image').src = imageSrc;
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
 </head>
 <body>
   <header class="header">
     <h2>Amarnath M</h2>
     <h1>Education Qualification</h1>
-    
     <img src="profile.jpg" alt="Profile Picture" class="profile-img">
   </header>
-  <div id="header-container"></div>
 
-<nav class="menu">
-  <a href="objective.html"><button>Objective</button></a>
-  <a href="skills.html"><button>Skills</button></a>
-  <a href="projects.html"><button>Projects</button></a>
-  <a href="index.html"><button>Back</button></a>
-  
-</nav>
+  <nav class="menu">
+    <a href="objective.html"><button>Objective</button></a>
+    <a href="skills.html"><button>Skills</button></a>
+    <a href="projects.html"><button>Projects</button></a>
+    <a href="index.html"><button>Back</button></a>
+  </nav>
 
+  <section class="content">
+    <table border="2">
+      <tr>
+        <th>Sno</th>
+        <th>Class</th>
+        <th>Marks Scores</th>
+        <th>School Name</th>
+        <th>Certificate</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>X</td>
+        <td>Pass</td>
+        <td>Government Higher Secondary School - Kammapuram</td>
+        <td><button onclick="showPopup('hsc.jpg')">View Certificate</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>XII</td>
+        <td>85.5%</td>
+        <td>Government Model School - Cuddalore</td>
+        <td><button onclick="showPopup('sslc.jpg')">View Certificate</button></td>
+      </tr>
+    </table>
 
-<section class="content">
-  <table border="2">
-    <tr>
-    <th>Sno</th>
-    <th>Class</th>
-    <th>Marks Scores</th>
-    <th>School Name</th>
-    <th>Certificate</th>
-    
-    </tr>
-    <tr>
-        
-    
-    <td>1</td>
-    <td>X</td>
-    <td>Pass</td>
-    <td>Government Higher Secondary School - Kammapuram</td>
-    <td><nav class="menu">
-        <a href ="hsc.jpg"><button>View Certifiactes</button></a>
-    
-      </nav></td>
-    
-    </tr>
-    <tr>
-    <td>2</td>
-    <td>XII</td>
-    <td>85.5%</td>
-    <td>Government Model School - Cuddalore</td>
-    <td><nav class="menu">
-        <a href ="sslc.jpg"><button>View Certifiactes</button></a>
-    
-      </nav></td>
-    </tr>
-    
-      <table border="2">
-        <tr>
+    <table border="2">
+      <tr>
         <th>Sno</th>
         <th>Department</th>
         <th>CGPA</th>
         <th>College Name</th>
         <th>Certificate</th>
-        
-        </tr>
-        <tr>
-          <td>1</td>
-    <td>Information Technology</td>
-    <td>Maintain 7.4</td>
-    <td>Kongu Engineering College - Perundurai</td>
-    <td>Currently Studying</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Information Technology</td>
+        <td>Maintain 7.4</td>
+        <td>Kongu Engineering College - Perundurai</td>
+        <td>Currently Studying</td>
+      </tr>
     </table>
-    </section>
+  </section>
 
-    
+  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+  <div class="popup" id="popup">
+    <img id="popup-image" src="#" alt="Certificate">
+    <button class="close-btn" onclick="closePopup()">Close</button>
+  </div>
 </body>
 </html>
